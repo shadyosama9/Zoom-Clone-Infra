@@ -29,24 +29,4 @@ variable "ZOOM_SGs" {
 
 
 
-## EC2 Vars
-
-# variable "ZOOM_INSTANCE" {
-#   type = map(object({
-#     instance-type = string
-#     ami = string
-#     key-name = string
-#     security-groups = list(string)
-#     zone = string
-#     tags = map(any)
-
-#     root_block_device = object({
-#       volume_type = string 
-#       volume_size = number
-#       delete_on_termination = bool
-#     })
-
-#   }))
-# }
-
 
