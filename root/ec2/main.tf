@@ -18,7 +18,7 @@ module "ec2-jenkins" {
     "Name" = "Jenkins-Server"
   }
   VOLUME_TYPE = "gp2"
-  VOLUME_SIZE = 20
+  VOLUME_SIZE = 30
 }
 
 
