@@ -7,7 +7,7 @@
   <h3 align="center">Zoom Clone Infrastructure</h3>
 </div>
 
-1. 📊 [Overview](#overview)
+## <a name="overview">📊 Overview</a>
 
 This repository is part of a collection of three repositories that follow GitOps principles to deploy a Zoom clone application to an AWS EKS cluster.
 
