@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://github.com/adrianhajdin/zoom-clone/assets/67959015/f09a8421-67d3-45ce-b9bc-a791cdc2774b" alt="Project Banner">
+      <img src="https://parallelstaff.com/wp-content/smush-webp/2023/12/terraform-1-1536x958.png.webp" alt="Terraform Banner">
   
   <br />
 
