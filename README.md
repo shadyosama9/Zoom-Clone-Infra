@@ -37,7 +37,7 @@ This repository uses modular Terraform configurations to create AWS infrastructu
 
     The EC2 instance module is responsible for provisioning Amazon EC2 instances with customizable configurations. It leverages input variables to allow for flexibility in defining the instance's properties. Below are the key features of this module:
 
-**Instance Configuration**
+    **Instance Configuration**
 - **instance_type**: The type of EC2 instance to be created (e.g., `t2.micro`, `t3.medium`).
 - **ami**: The Amazon Machine Image (AMI) used to launch the instance.
 - **key_name**: The key pair used for SSH access to the instance.
