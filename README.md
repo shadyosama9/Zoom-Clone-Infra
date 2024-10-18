@@ -146,7 +146,7 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 
 <br>
 
-**Steps for EC2 Creation**
+## **Steps for EC2 Creation**
 
 1. **Configure AWS CLI**
    - Set up your AWS credentials and default region:
@@ -197,7 +197,7 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
    - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
 
 
-**Steps for EKS and VPC Creation**
+## **Steps for EKS and VPC Creation**
 
 1. **Configure AWS CLI**
    - Set up your AWS credentials and default region:
