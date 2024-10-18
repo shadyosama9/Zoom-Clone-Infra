@@ -37,21 +37,21 @@ This repository uses modular Terraform configurations to create AWS infrastructu
 
 The EC2 instance module is responsible for provisioning Amazon EC2 instances with customizable configurations. It leverages input variables to allow for flexibility in defining the instance's properties. Below are the key features of this module:
 
-### Instance Configuration
+**Instance Configuration**
 - **instance_type**: The type of EC2 instance to be created (e.g., `t2.micro`, `t3.medium`).
 - **ami**: The Amazon Machine Image (AMI) used to launch the instance.
 - **key_name**: The key pair used for SSH access to the instance.
 - **vpc_security_group_ids**: The security groups associated with the instance.
 - **availability_zone**: Specifies the availability zone where the instance will be deployed (e.g., `us-east-1c`).
 
-### Root Block Device
+**Root Block Device**
 - Configurable options for the volume type and size.
 - Option to delete the volume upon termination of the instance.
 
-### Tags
+**Tags**
 - Supports adding custom tags to the instance for identification and management.
 
-### Variables Used
+**Variables Used**
 - `INSTANCE_TYPE`: Specifies the EC2 instance type.
 - `INSTANCE_TAGS`: A map of tags to associate with the instance.
 - `INSTANCE_SG_ID`: The security group ID to attach to the instance.
