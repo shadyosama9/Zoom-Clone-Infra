@@ -165,28 +165,34 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
      cd <repository-name>/root
      ```
 
-4. **Modify Terraform Configuration**
+4. **Navigate to the EC2 Sub-Directory**
+   - In the root directory go to ec2:
+     ```bash
+     cd ec2/
+     ```
+
+5. **Modify Terraform Configuration**
    - Open the `terraform.tf` file.
    - Comment out the backend configuration for now.
 
-5. **Initialize Terraform**
+6. **Initialize Terraform**
    - Run the following command to initialize Terraform:
      ```bash
      terraform init
      ```
 
-6. **Plan the Deployment**
+7. **Plan the Deployment**
    - Execute the command to see the execution plan:
      ```bash
      terraform plan
      ```
 
-7. **Apply the Configuration**
+8. **Apply the Configuration**
    - Apply the changes to create the EC2 instance:
      ```bash
      terraform apply
      ```
 
-8. **Configure Backend Storage (Optional)**
+9. **Configure Backend Storage (Optional)**
    - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
 
