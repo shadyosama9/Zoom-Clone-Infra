@@ -196,3 +196,54 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 9. **Configure Backend Storage (Optional)**
    - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
 
+
+**Steps for EKS and VPC Creation**
+
+1. **Configure AWS CLI**
+   - Set up your AWS credentials and default region:
+     ```bash
+     aws configure
+     ```
+2. **Clone the Repository**
+   - Clone the required repository to your local machine:
+     ```bash
+     git clone <repository-url>
+     ```
+
+3. **Navigate to the Root Directory**
+   - Change your working directory to the root of the cloned repository:
+     ```bash
+     cd <repository-name>/root
+     ```
+
+4. **Navigate to the EKS Sub-Directory**
+   - In the root directory go to ec2:
+     ```bash
+     cd eks/
+     ```
+
+5. **Modify Terraform Configuration**
+   - Open the `terraform.tf` file.
+   - Comment out the backend configuration for now.
+
+6. **Initialize Terraform**
+   - Run the following command to initialize Terraform:
+     ```bash
+     terraform init
+     ```
+
+7. **Plan the Deployment**
+   - Execute the command to see the execution plan:
+     ```bash
+     terraform plan
+     ```
+
+8. **Apply the Configuration**
+   - Apply the changes to create the EC2 instance:
+     ```bash
+     terraform apply
+     ```
+
+9. **Configure Backend Storage (Optional)**
+   - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
+
