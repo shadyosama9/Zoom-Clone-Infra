@@ -119,31 +119,18 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 
 ## Key Files in the eks Directory
 
-- **`main.tf`**
-
-This file is the primary configuration for your EKS setup. It utilizes two main modules:
+- **`main.tf`**: This file is the primary configuration for your EKS setup. It utilizes two main modules:
 
 - **`VPC Module`**: Creates a Virtual Private Cloud (VPC) tailored for the EKS cluster, defining CIDR blocks, subnets, and enabling NAT gateways.
 
 - **`EKS Module`**: Configures the EKS cluster itself, specifying parameters like the cluster name, version, node groups, and network settings.
 
-- **`providers.tf`**
+- **`providers.tf`**: Defines the AWS and Helm providers used for managing resources. This includes specifying the AWS region and the configuration required to authenticate and interact with the EKS cluster using the Helm provider.
 
-Defines the AWS and Helm providers used for managing resources. This includes specifying the AWS region and the configuration required to authenticate and interact with the EKS cluster using the Helm provider.
+- **`s3.tf`**: Configures an S3 bucket named `zoomclone-eks-bucket`, which is used for the backend to store the state file
 
-- **`s3.tf`**
+- **`terraform.tf`**: Specifies required providers for Terraform, such as AWS and Helm, along with their respective versions. It also sets up the S3 backend for state management, ensuring that Terraform state is stored in a remote S3 bucket.
 
-Configures an S3 bucket named `zoomclone-eks-bucket`, which is used for the backend to store the state file
+- **`eks-addon.tf`**: Configures EKS add-ons, specifically the `vpc-cni` add-on. This is crucial for managing networking in the cluster, enabling features like prefix delegation and pod security group enforcing.
 
-- **`terraform.tf`**
-
-Specifies required providers for Terraform, such as AWS and Helm, along with their respective versions. It also sets up the S3 backend for state management, ensuring that Terraform state is stored in a remote S3 bucket.
-
-- **`eks-addon.tf`**
-
-Configures EKS add-ons, specifically the `vpc-cni` add-on. This is crucial for managing networking in the cluster, enabling features like prefix delegation and pod security group enforcing.
-
-- **`eks-iam-lbcontroller.tf`**
-
-Sets up IAM roles and policies for the AWS Load Balancer Controller. This includes defining the assume role policy and attaching the necessary permissions for the controller to function correctly, such as managing load balancers and security groups.
-
+- **`eks-iam-lbcontroller.tf`**: Sets up IAM roles and policies for the AWS Load Balancer Controller. This includes defining the assume role policy and attaching the necessary permissions for the controller to function correctly, such as managing load balancers and security groups.
