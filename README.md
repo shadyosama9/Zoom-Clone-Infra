@@ -64,22 +64,22 @@ This repository uses modular Terraform configurations to create AWS infrastructu
 
 2. **Security Groups Module**
 
-The Security Groups module defines and manages security groups that control inbound and outbound traffic to AWS resources. The module supports dynamic creation of rules based on the input variables, making it highly flexible for different networking needs.
+    The Security Groups module defines and manages security groups that control inbound and outbound traffic to AWS resources. The module supports dynamic creation of rules based on the input variables, making it highly flexible for different networking needs.
 
-### Dynamic Rules Configuration
+**Dynamic Rules Configuration**
 - **Ingress Rules**: Allows inbound traffic to specified ports and protocols.
 - **Egress Rules**: Controls outbound traffic from the resources.
 
-### Dynamic Rule Creation
+**Dynamic Rule Creation**
 - Supports creating multiple ingress and egress rules for each security group based on the configurations provided in the variable.
 
-### VPC Association
+**VPC Association**
 - Each security group is associated with a specific VPC, ensuring that traffic rules are properly applied to resources within that network.
 
-### Tags
+**Tags**
 - Enables tagging for easier resource management and identification.
 
-### Variables Used
+**Variables Used**
 - `ZOOM_SGs`: A map of security group configurations, including:
   - **vpc_id**: The ID of the VPC where the security group will be created.
   - **name**: The name of the security group.
@@ -87,5 +87,5 @@ The Security Groups module defines and manages security groups that control inbo
   - **ingress** and **egress**: Lists of rules specifying allowed inbound and outbound traffic.
   - **tags**: Tags associated with the security group.
 
-### Outputs
+**Outputs**
 - **Security-Groups-IDs**: Outputs a map of security group IDs created by the module, allowing easy reference for other resources.
