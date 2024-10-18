@@ -148,7 +148,7 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 
 **Steps**
 
-## Steps for EC2 Creation
+**Steps for EC2 Creation**
 
 1. **Configure AWS CLI**
    - Set up your AWS credentials and default region:
