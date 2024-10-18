@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://parallelstaff.com/wp-content/smush-webp/2023/12/terraform-1-1536x958.png.webp" alt="Terraform Banner">
+      <img src="https://zoomclone-images.s3.amazonaws.com/terraform-1-1536x958.png.webp" alt="Terraform Banner">
   
   <br />
 
@@ -141,7 +141,8 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 
 **Prerequisites**
 - git installed
-- An AWS accoune
+- An AWS account
+- AWS CLI insatalled
 - Terraform installed
 
 <br>
