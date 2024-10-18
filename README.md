@@ -146,8 +146,6 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 
 <br>
 
-**Steps**
-
 **Steps for EC2 Creation**
 
 1. **Configure AWS CLI**
