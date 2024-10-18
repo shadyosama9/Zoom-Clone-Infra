@@ -248,3 +248,14 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 9. **Configure Backend Storage (Optional)**
    - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
 
+---
+
+## Infrastructure and EKS Cluster Setup
+
+Upon completing the steps outlined above, you will have a fully operational infrastructure, including an Amazon EKS cluster with an ingress controller and ArgoCD, ready for application deployment.
+
+### Additional Resources
+
+- For instructions on setting up Jenkins and Splunk, visit the [Application Code Repository](https://github.com/shadyosama9/Zoom-Clone-App.git).
+- To learn about the application deployment process, check the [Kubernetes Configuration Repository](https://github.com/shadyosama9/Zoom-Clone-K8s).
+
