@@ -89,3 +89,23 @@ This repository uses modular Terraform configurations to create AWS infrastructu
 
     **Outputs**
     - **Security-Groups-IDs**: Outputs a map of security group IDs created by the module, allowing easy reference for other resources.
+---
+
+## <a name="root">📂 Root Directory Overview</a>
+
+The root directory contains Terraform configurations structured to deploy and manage AWS infrastructure, organized into subdirectories to ensure modularity and maintainability. It includes the following components:
+
+## 1. EC2 Sub-Directory
+    The EC2 sub-directory defines and provisions EC2 instances using reusable modules. It includes the following key files:
+
+- **`main.tf`**: This file contains the module definitions for creating security groups and EC2 instances (Jenkins and Splunk servers). It uses modules from the `modules` directory to ensure that the configurations are reusable and easy to manage.
+  
+- **`providers.tf`**: Specifies the AWS provider and the region where the resources will be deployed.
+
+- **`s3.tf`**: Defines an S3 bucket to be used in conjunction with the EC2 resources, likely for storing state files or other relevant data.
+
+- **`vars.tf`**: Contains variable definitions to parameterize the configuration, allowing for flexibility in specifying the security group settings.
+
+- **`terraform.tf`**: Configures the Terraform backend to use an S3 bucket for state management, ensuring that the infrastructure state is stored securely and can be shared among team members.
+
+
