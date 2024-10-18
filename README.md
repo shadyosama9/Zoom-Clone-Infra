@@ -154,7 +154,7 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
    - Set up your AWS credentials and default region:
      ```bash
      aws configure
-    ```
+     ```
 2. **Clone the Repository**
    - Clone the required repository to your local machine:
      ```bash
