@@ -196,6 +196,7 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 9. **Configure Backend Storage (Optional)**
    - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
 
+<br>
 
 ## **Steps for EKS and VPC Creation**
 
