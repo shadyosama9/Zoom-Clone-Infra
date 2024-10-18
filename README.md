@@ -28,9 +28,6 @@ This repository contains Terraform configurations for provisioning the applicati
 The setup utilizes reusable Terraform modules, making it easy to manage and replicate across different environments.
 
 ---
-Here's the content formatted in Markdown:
-
----
 
 ## <a name="modules">📦 Modules Overview</a>
 
