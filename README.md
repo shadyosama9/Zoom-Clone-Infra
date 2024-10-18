@@ -134,3 +134,61 @@ The eks sub-directory is dedicated to setting up the infrastructure required for
 - **`eks-addon.tf`**: Configures EKS add-ons, specifically the `vpc-cni` add-on. This is crucial for managing networking in the cluster, enabling features like prefix delegation and pod security group enforcing.
 
 - **`eks-iam-lbcontroller.tf`**: Sets up IAM roles and policies for the AWS Load Balancer Controller. This includes defining the assume role policy and attaching the necessary permissions for the controller to function correctly, such as managing load balancers and security groups.
+
+---
+
+## <a name="infra">🏗️ Inrfastructure Creation</a>
+
+**Prerequisites**
+- git installed
+- An AWS accoune
+- Terraform installed
+
+<br>
+
+**Steps**
+
+## Steps for EC2 Creation
+
+1. **Configure AWS CLI**
+   - Set up your AWS credentials and default region:
+     ```bash
+     aws configure
+    ```
+2. **Clone the Repository**
+   - Clone the required repository to your local machine:
+     ```bash
+     git clone <repository-url>
+     ```
+
+3. **Navigate to the Root Directory**
+   - Change your working directory to the root of the cloned repository:
+     ```bash
+     cd <repository-name>/root
+     ```
+
+4. **Modify Terraform Configuration**
+   - Open the `terraform.tf` file.
+   - Comment out the backend configuration for now.
+
+5. **Initialize Terraform**
+   - Run the following command to initialize Terraform:
+     ```bash
+     terraform init
+     ```
+
+6. **Plan the Deployment**
+   - Execute the command to see the execution plan:
+     ```bash
+     terraform plan
+     ```
+
+7. **Apply the Configuration**
+   - Apply the changes to create the EC2 instance:
+     ```bash
+     terraform apply
+     ```
+
+8. **Configure Backend Storage (Optional)**
+   - Once the infrastructure is created, uncomment the backend configuration in the `terraform.tf` file to enable storage of the Terraform state in the S3 bucket.
+
