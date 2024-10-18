@@ -98,7 +98,7 @@ The root directory contains Terraform configurations structured to deploy and ma
 ## 1. EC2 Sub-Directory
 The EC2 sub-directory defines and provisions EC2 instances using reusable modules.
 
-## Key Files in the eks Directory
+## Key Files in the ec2 Directory
 
 - **`main.tf`**: This file contains the module definitions for creating security groups and EC2 instances (Jenkins and Splunk servers). It uses modules from the `modules` directory to ensure that the configurations are reusable and easy to manage.
   
